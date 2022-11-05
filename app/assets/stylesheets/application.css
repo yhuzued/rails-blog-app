@@ -13,3 +13,99 @@
  *= require_tree .
  *= require_self
  */
+
+ h1 a {
+  color: rgb(247, 212, 218);
+  text-decoration: none;
+ }
+
+ a {
+  text-decoration: none;
+ }
+
+ html body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: whitesmoke;
+ }
+
+ /* Navbar  */
+
+ .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  background-image: linear-gradient( 135deg, #3B2667 10%, #BC78EC 100%);
+  position: sticky;
+  top: 0;
+  box-shadow: -2px 6px 8px -6px rgba(0,0,0,0.7);
+  -webkit-box-shadow: -2px 6px 8px -6px rgba(0,0,0,0.7);
+  -moz-box-shadow: -2px 6px 8px -6px rgba(0,0,0,0.7);
+ }
+
+/* Body  */
+
+ @media (min-width: 720px){
+  .grid-card {
+    display: grid;
+    padding: 0.4rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+ }
+
+ .card {
+  background-color: rgb(204, 189, 211);
+  padding: 15px;
+  margin: 5px;
+  border-radius: 8px;
+  box-shadow: 7px 7px 8px -6px rgba(0,0,0,0.7);
+  -webkit-box-shadow: 7px 7px 8px -6px rgba(0,0,0,0.7);
+  -moz-box-shadow: 7px 7px 8px -6px rgba(0,0,0,0.7);
+ }
+
+ .grid-card {
+  display: grid;
+  padding: 0.4rem;
+}
+
+ .card-title {
+  font-size: 18px;
+  font-weight: 550;
+  padding-bottom: 1rem;
+ }
+
+.shout-button a {
+  text-decoration: none;
+  color: whitesmoke;
+ }
+
+ .card-add-comment {
+  text-align: right;
+ }
+
+ /* Button  */
+
+.shout-button{
+  background-color: #3B2667;
+  color: #fff;
+  font-family: Trebuchet MS;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  text-decoration: none;
+  padding: 14px 15px;
+  border: 0px solid #000;
+  border-radius: 10px;
+  display: inline-block;
+  cursor: pointer;
+ }
+
+ .shout-button:hover{
+    background-color: #9b89c2;
+ }
+ .shout-button:active{
+    transform: scale(0.95);
+ }
