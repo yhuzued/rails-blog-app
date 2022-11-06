@@ -11,7 +11,7 @@
   </div>
 
   <div>
-    <div>  <%= form.label 'Shout your mind below (max 140 characters)' %> </div>
+    <div>  <%= form.label 'Shout your mind below (max 400 characters)' %> </div>
     <div> <%= form.text_area :body %>  </div>
     <div class='notice'>
       <% article.errors.full_messages_for(:body).each do |message| %>
@@ -19,7 +19,6 @@
       <% end %>
     </div>
   </div>
-
   <div>
     <%= form.submit 'Shout!' %>
   </div>
