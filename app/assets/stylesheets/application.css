@@ -46,7 +46,7 @@
   -moz-box-shadow: -2px 6px 8px -6px rgba(0,0,0,0.7);
  }
 
-/* Body  */
+
 
  @media (min-width: 720px){
   .grid-card {
@@ -54,16 +54,140 @@
     padding: 0.4rem;
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .grid-container {
+    display: grid;
+    padding: 0.4rem;
+    grid-template-columns: 2fr 1fr;
+  }
+
+
+  #comment-form {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    max-height: 400px;
+  }
+
+  #comment-body{
+    grid-row-start: 2;
+  }
+
+  .card-create-shout{
+    grid-row-start: 2;
+  }
  }
 
+/* show page  */
+  #comment-body{
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    margin: 15px;
+    border-radius: 8px;
+    border: 2px outset gainsboro;
+    box-shadow: 7px 7px 13px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 7px 7px 13px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 7px 13px -3px rgba(0,0,0,0.75);
+  }
+
+ .button-body {
+  display: flex;
+  gap: 12px;
+  padding: 15px;
+  margin: 5px;
+ }
+
+ .delete-button a{
+  text-decoration: none;
+  color: white;
+ }
+
+ .delete-button{
+  background-color: #ca1919;
+  color: #fff;
+  font-family: Trebuchet MS;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  text-decoration: none;
+  padding: 14px 15px;
+  border: 0px solid #000;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 7px 7px 13px -3px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 7px 7px 13px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 7px 7px 13px -3px rgba(0,0,0,0.75);
+ }
+ .delete-button:hover{
+  background-color: #d05454;
+ }
+ .delete-button:active{
+  transform: scale(0.95);
+ }
+
+ .edit-button a{
+  text-decoration: none;
+  color: white;
+ }
+
+ .edit-button{
+  background-color: #6319ca;
+  color: #fff;
+  font-family: Trebuchet MS;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  text-decoration: none;
+  padding: 14px 15px;
+  border: 0px solid #000;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 7px 7px 13px -3px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 7px 7px 13px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 7px 7px 13px -3px rgba(0,0,0,0.75);
+ }
+ .edit-button:hover{
+  background-color: #7c54d0;
+ }
+ .edit-button:active{
+  transform: scale(0.95);
+ }
+
+ #content {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 7px 7px 13px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 7px 7px 13px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 7px 13px -3px rgba(0,0,0,0.75);
+  }
+
+ #content .interact {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+  }
+
+
+
+ /* comment form */
+
+ #comment-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+ }
+
+/* index page  */
+
  .card {
-  background-color: rgb(204, 189, 211);
+  background-color: white;
   padding: 15px;
   margin: 5px;
   border-radius: 8px;
-  box-shadow: 7px 7px 8px -6px rgba(0,0,0,0.7);
-  -webkit-box-shadow: 7px 7px 8px -6px rgba(0,0,0,0.7);
-  -moz-box-shadow: 7px 7px 8px -6px rgba(0,0,0,0.7);
+  border: 2px outset gainsboro;
  }
 
  .grid-card {
@@ -85,6 +209,84 @@
  .card-add-comment {
   text-align: right;
  }
+
+  /* new page */
+ .notice {
+  font-size: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  color: red;
+ }
+
+ .card-create-shout{
+  margin: 1rem;
+  padding: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 7px 7px 13px -3px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 7px 7px 13px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 7px 7px 13px -3px rgba(0,0,0,0.75);
+ }
+  
+ 
+ .card-create-shout form  {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  outline: none;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 5px;
+  font-size: 16px;
+ }
+ 
+ .card-create-shout textarea {
+    width: 300px;
+    height: 100px;
+    resize: none;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+  
+ .card-create-shout input {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+ }
+
+ .card-create-shout [type='submit'] {
+    background: linear-gradient(to right,#8419ca ,#6433E0);
+    background-color: #8419ca;
+    color: #fff;
+    font-family: Trebuchet MS;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+    text-decoration: none;
+    padding: 14px 15px;
+    border: 0px solid #000;
+    border-radius: 10px;
+    display: inline-block;
+ }
+
+ .card-create-shout [type='submit']:hover {
+    background: linear-gradient(to right,#9554d0 ,#7d5ee3);
+    background-color: #9554d0;
+    cursor: pointer;
+ }
+
+ .card-create-shout [type='submit']:active{
+    transform: scale(0.95);
+ }
+
 
  /* Button  */
 
