@@ -1,12 +1,12 @@
 <%= form_with model: [ @article, @article.comments.build ] do |form| %>
   <p>
     <div><%= form.label 'Name' %></div>
-    <%= form.text_field :commenter%>
+    <%= form.text_field :commenter, :required => true %>
   </p>
 
   <p>
     <div><%= form.label 'Your comment' %></div>
-    <%= form.text_area :body %>
+    <%= form.text_area :body, :required => true %>
   </p>
   <p>
     <%= form.submit %>

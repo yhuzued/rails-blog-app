@@ -25,5 +25,8 @@
 
   <div id='comment-body'>
     <h2>Comments <%= @article.comments.count %></h2>
-    <p><%= render @article.comments  %></>
+    <% if @article.comments.count > 0 %>
+      <p><%= render @article.comments  %></>
+    <% end %>
+  </div>
 </section>
