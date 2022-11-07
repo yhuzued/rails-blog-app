@@ -241,7 +241,8 @@
  }
  
  .card-create-shout textarea {
-    width: 300px;
+    max-width: 350px;
+    min-width: 270px;
     height: 100px;
     resize: none;
     outline: none;
